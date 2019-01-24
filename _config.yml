@@ -1,0 +1,20 @@
+# Configuration variables for the website
+
+lang: "en"
+title: "Kalpit Thakkar"
+author: "Kalpit Thakkar"
+description: "New beginnings"
+
+url: "https://kalpitthakkar.github.io"
+baseurl: ""
+
+github_username: "kalpitthakkar"
+
+markdown: kramdown
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
