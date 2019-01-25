@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en"}}">
+<html lang="en">
   <head>
 
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title> {{ site.title }} </title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author }}">
+    <title> Kalpit Thakkar </title>
+    <meta name="description" content="New beginnings">
+    <meta name="author" content="Kalpit Thakkar">
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -19,25 +19,37 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/skeleton.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/modify.css' | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/skeleton.css">
+    <link rel="stylesheet" href="/assets/css/modify.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
   </head>
   <header>
     <div class="container">
       <ul class="nav-list">
-        {% for obj in site.data.navigation %}
+        
           <li>
-            <a href="{{ obj.url | relative_url }}">
-              {{ obj.title }}
+            <a href="/about/">
+              About
             </a>
           </li>
-        {% endfor %}
+        
+          <li>
+            <a href="/blog/">
+              Blog
+            </a>
+          </li>
+        
+          <li>
+            <a href="/creations/">
+              Creations
+            </a>
+          </li>
+        
       </ul>
 
       <div class="align-clocks">
@@ -124,15 +136,16 @@
     <div class="container">
       <div class="row">
         <div class="one-half column" style="margin-top: 25%">
-          <h4>{{ page.title }}</h4>
-          {{ content }}
+          <h4>Recent News</h4>
+          <p>Cool stuff here.</p>
+
         </div>
       </div>
     </div>
 
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="{{ '/assets/js/clock.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/num_clock.js' | relative_url }}"></script>
+    <script src="/assets/js/clock.js"></script>
+    <script src="/assets/js/num_clock.js"></script>
   </body>
 </html>

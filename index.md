@@ -1,6 +1,6 @@
 ---
-title: "Simple Page"
+title: "Recent News"
 layout: default
 ---
 
-Just checking!
+Cool stuff here.
