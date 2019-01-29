@@ -1,138 +1,31 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en"}}">
   <head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title> {{ site.title }} </title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author }}">
-
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/skeleton.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/modify.css' | relative_url }}">
-
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
-
+    {% include header.html %}
   </head>
+  
   <header>
-    <div class="container">
-      <ul class="nav-list">
-        {% for obj in site.data.navigation %}
-          <li>
-            <a href="{{ obj.url | relative_url }}">
-              {{ obj.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      <div class="align-clocks">
-        <ul class="clock">
-          <li class="part">
-            <ul class="clock-digit">
-              <li class="h11"> </li>
-              <li class="h12"> </li>
-              <li class="h13"> </li>
-              <li class="h14"> </li>
-            </ul>
-            <ul class="clock-digit">
-              <li class="h21"> </li>
-              <li class="h22"> </li>
-              <li class="h23"> </li>
-              <li class="h24"> </li>
-            </ul>
-          </li>
-          <li class="part">
-            <ul class="clock-digit">
-              <li class="m11"> </li>
-              <li class="m12"> </li>
-              <li class="m13"> </li>
-              <li class="m14"> </li>
-            </ul>
-            <ul class="clock-digit">
-              <li class="m21"> </li>
-              <li class="m22"> </li>
-              <li class="m23"> </li>
-              <li class="m24"> </li>
-            </ul>
-          </li>
-          <li class="part">
-            <ul class="clock-digit">
-              <li class="s11"> </li>
-              <li class="s12"> </li>
-              <li class="s13"> </li>
-              <li class="s14"> </li>
-            </ul>
-            <ul class="clock-digit">
-              <li class="s21"> </li>
-              <li class="s22"> </li>
-              <li class="s23"> </li>
-              <li class="s24"> </li>
-            </ul>
-          </li>
-        </ul>
-
-        <ul class="clock">
-          <li class="part">
-            <ul class="real-digit">
-              <li class="h1"> 0 </li>
-            </ul>
-            <ul class="real-digit">
-              <li class="h2"> 0 </li>
-            </ul>
-          </li>
-          <li class="real-digit colon"><strong> : </strong></li>
-          <li class="part">
-            <ul class="real-digit">
-              <li class="m1"> 0 </li>
-            </ul>
-            <ul class="real-digit">
-              <li class="m2"> 0 </li>
-            </ul>
-          </li>
-          <li class="real-digit colon"><strong> : </strong></li>
-          <li class="part">
-            <ul class="real-digit">
-              <li class="s1"> 0 </li>
-            </ul>
-            <ul class="real-digit">
-              <li class="s2"> 0 </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
+    {% include masthead.html %}
   </header>
+
   <body>
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
+        <div class="one-half column" style="margin-top: 10%">
           <h4>{{ page.title }}</h4>
           {{ content }}
         </div>
       </div>
     </div>
+  </body>
 
   <!-- End Document
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="{{ '/assets/js/clock.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/num_clock.js' | relative_url }}"></script>
-  </body>
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include footer.html %}
 </html>

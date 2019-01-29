@@ -67,6 +67,25 @@ li a {
 }
 
 li a:hover {
-  color: white;
-  background-color: black;
+  color: orangered;
+}
+
+.profile {
+  display: block;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.site-logo {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding-right: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
