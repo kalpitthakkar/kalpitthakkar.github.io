@@ -1,2 +1,4 @@
-# kalpitthakkar.github.io
-Try to get a good website up.
+# TODOs
+
+- [ ] Get a responsive timeline on the landing page for recent news.
+- [ ] Responsive masthead elements.

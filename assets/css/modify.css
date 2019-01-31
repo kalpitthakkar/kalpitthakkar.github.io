@@ -15,6 +15,7 @@ ul {
 
 .clock {
   margin: 2px;
+  padding-left: 25px;
 }
 
 .clock li {
@@ -58,7 +59,7 @@ ul {
   background-color: orangered;
 }
 
-li a {
+.nav-list-link a {
   display: block;
   color: black;
   padding: 10px 16px;
@@ -66,7 +67,15 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nav-list-link a:hover {
+  color: orangered;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
   color: orangered;
 }
 
@@ -81,11 +90,20 @@ li a:hover {
   display: inline-block;
   width: 48px;
   height: 48px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 .center {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+.orange-title {
+  display: inline-block;
+  color: orangered; /*rgba(255, 69, 0, 0.85);*/
+  /*background-color: black;
+  width: auto;
+  height: auto;
+  padding: 10px;*/
 }

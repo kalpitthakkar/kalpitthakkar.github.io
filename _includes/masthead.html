@@ -8,7 +8,7 @@
 
 			<ul class="nav-list">
 				{% for obj in site.data.navigation %}
-				<li>
+				<li class="nav-list-link">
 					<a href="{{ obj.url | relative_url }}">
 					{{ obj.title }}
 					</a>
@@ -66,28 +66,28 @@
 			<ul class="clock">
 				<li class="part">
 					<ul class="real-digit">
-						<li class="h1"> 0 </li>
+						<li class="h1 robo-normal"> 0 </li>
 					</ul>
 					<ul class="real-digit">
-						<li class="h2"> 0 </li>
-					</ul>
-				</li>
-				<li class="real-digit colon"><strong> : </strong></li>
-				<li class="part">
-					<ul class="real-digit">
-						<li class="m1"> 0 </li>
-					</ul>
-					<ul class="real-digit">
-						<li class="m2"> 0 </li>
+						<li class="h2 robo-normal"> 0 </li>
 					</ul>
 				</li>
 				<li class="real-digit colon"><strong> : </strong></li>
 				<li class="part">
 					<ul class="real-digit">
-						<li class="s1"> 0 </li>
+						<li class="m1 robo-normal"> 0 </li>
 					</ul>
 					<ul class="real-digit">
-						<li class="s2"> 0 </li>
+						<li class="m2 robo-normal"> 0 </li>
+					</ul>
+				</li>
+				<li class="real-digit colon"><strong> : </strong></li>
+				<li class="part">
+					<ul class="real-digit">
+						<li class="s1 robo-normal"> 0 </li>
+					</ul>
+					<ul class="real-digit">
+						<li class="s2 robo-normal"> 0 </li>
 					</ul>
 				</li>
 			</ul>

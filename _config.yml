@@ -4,6 +4,7 @@ lang: "en"
 title: "Kalpit Thakkar"
 author: "Kalpit Thakkar"
 description: "New beginnings"
+permalink: /posts/:year/:month/:day/:title/
 
 url: "https://kalpitthakkar.github.io"
 baseurl: ""

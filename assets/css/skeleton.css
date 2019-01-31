@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
@@ -154,6 +154,55 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+.robo-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.robo-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.robo-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.sserif-normal {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+}
+
+.sserif-medium {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+}
+
+.sserif-bold {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.monty-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.monty-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.monty-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.monty-heavy {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
