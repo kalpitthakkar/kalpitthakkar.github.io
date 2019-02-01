@@ -181,3 +181,118 @@ a:hover {
     margin-top: 8px;
   }
 }
+
+* {
+  position: relative;
+}
+
+.timeline {
+	padding: 40px 0px;
+  width: 100%;
+}
+
+.timeline:before {
+	content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+	width: 4px;
+	height: calc(100% - 50px);
+  background: rgba(255, 69, 0, 0.5);
+}
+
+.timeline .col {
+  margin-left: 20px;
+}
+
+.timeline .col .title h1 {
+  margin-left: 20px;
+	color: rgba(0,0,0,0.1);
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+.timeline .col .title h1:before {
+	content: "";
+	position: absolute;
+	left: -45px;
+	top: 60px;
+	width: 10px;
+	height: 10px;
+	background: rgba(255, 69, 0, 0.5);
+  border: 2px solid rgb(255, 68, 0);
+}
+
+.timeline .col .title h2 {
+  margin-top: -25px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.timeline .col .description p {
+	font-size: 15px;
+	line-height: 20px;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.timeline .col .description {
+  border-left: 1px solid #000;
+  margin-left: 25px;
+}
+
+@media (max-width: 550px) {
+  .timeline .col {
+    margin-left: 10px;
+  }
+
+  .timeline .col .title h1 {
+    font-size: 30px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+  }
+
+  .timeline .col .title h1:before {
+    left: -24px;
+    top: 25px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .timeline .col .title h2 {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .timeline .col .description p {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  .timeline .col .description {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 550px) {
+
+  .timeline .col .title h1 {
+    font-size: 40px;
+  }
+
+  .timeline .col .title h1:before {
+    top: 35px;
+  }
+
+  .timeline .col .title h2 {
+    font-size: 25px;
+  }
+
+  .timeline .col .description p {
+    font-size: 15px;
+  }
+
+  .timeline .col .description {
+    margin-left: 15px;
+  }
+}

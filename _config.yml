@@ -19,3 +19,6 @@ plugins:
 exclude:
     - Gemfile
     - Gemfile.lock
+
+collections:
+    - news
