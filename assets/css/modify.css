@@ -296,3 +296,24 @@ a:hover {
     margin-left: 15px;
   }
 }
+
+.speech-bubble {
+	position: relative;
+	background: rgba(255, 69, 0, 0.5);
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: rgb(255, 68, 0);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
