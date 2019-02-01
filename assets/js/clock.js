@@ -49,10 +49,17 @@
       else
         $('.s2' + i).classList.remove('on')
     }
+
+    var clock = document.getElementsByClassName('clock')[1];
+    clock.getElementsByClassName('h1')[0].innerHTML = h1;
+    clock.getElementsByClassName('h2')[0].innerHTML = h2;
+    clock.getElementsByClassName('m1')[0].innerHTML = m1;
+    clock.getElementsByClassName('m2')[0].innerHTML = m2;
+    clock.getElementsByClassName('s1')[0].innerHTML = s1;
+    clock.getElementsByClassName('s2')[0].innerHTML = s2;
+    clock.getElementsByClassName('colon')[0].classList.toggle("blink");
+    clock.getElementsByClassName('colon')[1].classList.toggle("blink");
   }
-  
-  setInterval(updt, 1000)
-  
-  updt()
-  
+  setInterval(updt, 1000);
+  updt();
 })(window, document)

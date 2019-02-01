@@ -107,3 +107,77 @@ a:hover {
   height: auto;
   padding: 10px;*/
 }
+
+@media (max-width: 550px) {
+  .clock {
+    margin: 2px;
+    padding-left: 5px;
+  }
+
+  .clock-digit {
+    margin: 0px 1px;
+  }
+
+  .clock-digit li {
+    width: 4px;
+    height: 4px;
+  }
+
+  .real-digit {
+    font-size: 8px;
+  }
+
+  .site-logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+  }
+
+  .nav-list-link a {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+
+  .center {
+    margin-top: 5px;
+  }
+
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 550px) {
+  .clock {
+    margin: 2px;
+    padding-left: 5px;
+  }
+
+  .clock-digit {
+    margin: 0px 2px;
+  }
+
+  .clock-digit li {
+    width: 5px;
+    height: 5px;
+  }
+
+  .real-digit {
+    font-size: 13px;
+  }
+
+  .site-logo {
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
+  }
+
+  .nav-list-link a {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .center {
+    margin-top: 8px;
+  }
+}
