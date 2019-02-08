@@ -5,6 +5,8 @@ title: "Kalpit Thakkar"
 author: "Kalpit Thakkar"
 description: "New beginnings"
 permalink: /posts/:year/:month/:day/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 url: "https://kalpitthakkar.github.io"
 baseurl: ""
@@ -15,10 +17,16 @@ markdown: kramdown
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
+    - jekyll-paginate
+    - jekyll-sitemap
 
 exclude:
     - Gemfile
     - Gemfile.lock
 
 collections:
-    - news
+    news:
+        output: false
+    scribbles:
+        output: true
+        permalink: /scribbles/:year/:month/:day/:title/

@@ -2,10 +2,20 @@
 layout: default
 ---
 
+<h4> Detailed Posts </h4>
 <ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
   </li>
   {% endfor %}
+</ul>
+
+<h4> Scribbles </h4>
+<ul>
+	{% for scribble in site.scribbles %}
+	<li>
+		<a href="{{ scribble.url | relative_url }}"> {{ scribble.title }} </a>
+	</li>
+	{% endfor %}
 </ul>

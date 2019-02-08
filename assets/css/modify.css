@@ -301,21 +301,28 @@ a:hover {
 
 .speech-bubble {
 	position: relative;
-	background: rgba(255, 69, 0, 0.5);
-	border-radius: .4em;
+	background: rgba(255, 69, 0, 0.6);
+  border-radius: .4em;
+  width: 80%;
+  padding: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: rgb(255, 68, 0);
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top: 0;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-bottom-color: rgba(255, 69, 0, 0.75);
+}
+
+.calign {
+  text-align: center;
 }
