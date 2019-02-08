@@ -88,8 +88,8 @@ a:hover {
 
 .site-logo {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   padding-right: 20px;
 }
 
@@ -203,13 +203,14 @@ a:hover {
 
 .timeline .col {
   margin-left: 20px;
+  padding-bottom: 25px;
 }
 
 .timeline .col .title h1 {
   margin-left: 20px;
 	color: rgba(0,0,0,0.1);
   letter-spacing: 3px;
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 .timeline .col .title h1:before {
@@ -226,11 +227,11 @@ a:hover {
 .timeline .col .title h2 {
   margin-top: -25px;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .timeline .col .description p {
-	font-size: 15px;
+	font-size: 1.6rem;
 	line-height: 20px;
 	margin-left: 30px;
 	margin-top: 5px;
@@ -244,10 +245,11 @@ a:hover {
 @media (max-width: 550px) {
   .timeline .col {
     margin-left: 10px;
+    padding-bottom: 15px;
   }
 
   .timeline .col .title h1 {
-    font-size: 30px;
+    font-size: 3rem;
     margin-left: 10px;
     letter-spacing: 2px;
   }
@@ -261,11 +263,11 @@ a:hover {
 
   .timeline .col .title h2 {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .timeline .col .description p {
-    font-size: 10px;
+    font-size: 1.2rem;
     margin-left: 20px;
   }
 
@@ -277,7 +279,7 @@ a:hover {
 @media (max-width: 750px) and (min-width: 550px) {
 
   .timeline .col .title h1 {
-    font-size: 40px;
+    font-size: 4rem;
   }
 
   .timeline .col .title h1:before {
@@ -285,11 +287,11 @@ a:hover {
   }
 
   .timeline .col .title h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 
   .timeline .col .description p {
-    font-size: 15px;
+    font-size: 1.6rem;
   }
 
   .timeline .col .description {
