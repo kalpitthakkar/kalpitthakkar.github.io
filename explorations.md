@@ -10,7 +10,7 @@ permalink: /explorations/
 			<figure class="snip1104">
 				<img src="{{ '/assets/explorations/0002_hoboken.jpg' | relative_url }}" />
 				<figcaption>
-					<h2>Hoboken, <span> NJ</span></h2>
+					<p>Hoboken, <span> NJ</span> </p>
 				</figcaption>
 			</figure>
 		</div>
@@ -18,7 +18,7 @@ permalink: /explorations/
 			<figure class="snip1104">
 				<img class="snip1104" src="{{ '/assets/explorations/0001_cake.jpg' | relative_url }}" />
 				<figcaption>
-					<h2>My Bake Kitchen, <span> RI</span></h2>
+					<p>My Bake Kitchen, <span> RI</span> </p>
 				</figcaption>
 			</figure>
 		</div>
