@@ -1,0 +1,33 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en'}}">
+  <head>
+    {% include header.html %}
+  </head>
+  
+  <header>
+    {% include masthead.html %}
+  </header>
+
+  <body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <div class="row">
+        <div class="column" style="margin-top: 10%">
+          <h3>{{ page.title }}</h3>
+          <div class="sserif-normal">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include footer.html %}
+</html>
