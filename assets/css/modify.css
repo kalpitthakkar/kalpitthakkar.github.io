@@ -65,10 +65,15 @@ ul {
   padding: 10px 16px;
   text-align: center;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .nav-list-link a:hover {
   color: orangered;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 a {
@@ -81,15 +86,15 @@ a:hover {
 
 .profile {
   display: block;
-  width: 240px;
-  height: 240px;
+  width: 275px;
+  height: 260px;
   border-radius: 50%;
 }
 
 .site-logo {
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   padding-right: 20px;
 }
 
@@ -135,7 +140,7 @@ a:hover {
 
   .nav-list-link a {
     padding: 4px 6px;
-    font-size: 10px;
+    font-size: 1rem;
   }
 
   .center {
@@ -174,7 +179,7 @@ a:hover {
 
   .nav-list-link a {
     padding: 5px 8px;
-    font-size: 13px;
+    font-size: 1.2rem;
   }
 
   .center {
@@ -187,7 +192,7 @@ a:hover {
 }
 
 .timeline {
-	padding: 40px 0px;
+	padding: 10px 0px;
   width: 100%;
 }
 
@@ -196,106 +201,89 @@ a:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-	width: 4px;
-	height: calc(100% - 50px);
+	width: 2px;
+	height: calc(100% - 20px);
   background: rgba(255, 69, 0, 0.5);
 }
 
 .timeline .col {
-  margin-left: 20px;
-  padding-bottom: 25px;
+  margin-left: 10px;
 }
 
 .timeline .col .title h1 {
-  margin-left: 20px;
-	color: rgba(0,0,0,0.1);
-  letter-spacing: 3px;
-  font-size: 6rem;
+  margin-left: 10px;
+	color: rgba(0,0,0,0.3);
+  font-size: 2.8rem;
 }
 
 .timeline .col .title h1:before {
 	content: "";
 	position: absolute;
-	left: -45px;
-	top: 60px;
-	width: 10px;
-	height: 10px;
+	left: -22px;
+	top: 30px;
+	width: 4px;
+	height: 4px;
 	background: rgba(255, 69, 0, 0.5);
-  border: 2px solid rgb(255, 68, 0);
+  border: 1px solid rgb(255, 68, 0);
 }
 
 .timeline .col .title h2 {
   margin-top: -25px;
-  margin-left: 20px;
-  font-size: 3rem;
+  margin-left: 10px;
+  font-size: 2.2rem;
 }
 
 .timeline .col .description p {
-	font-size: 1.6rem;
-	line-height: 20px;
-	margin-left: 30px;
-	margin-top: 5px;
+	font-size: 1.8rem;
 }
 
 .timeline .col .description {
-  border-left: 1px solid #000;
-  margin-left: 25px;
+  margin-left: 10px;
+  margin-top: -20px;
 }
 
 @media (max-width: 550px) {
   .timeline .col {
     margin-left: 10px;
-    padding-bottom: 15px;
   }
 
   .timeline .col .title h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 10px;
-    letter-spacing: 2px;
-  }
-
-  .timeline .col .title h1:before {
-    left: -24px;
-    top: 25px;
-    width: 8px;
-    height: 8px;
   }
 
   .timeline .col .title h2 {
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .timeline .col .description p {
     font-size: 1.2rem;
-    margin-left: 20px;
   }
 
   .timeline .col .description {
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-top: -20px;
   }
 }
 
 @media (max-width: 750px) and (min-width: 550px) {
 
   .timeline .col .title h1 {
-    font-size: 4rem;
-  }
-
-  .timeline .col .title h1:before {
-    top: 35px;
+    font-size: 2.2rem;
   }
 
   .timeline .col .title h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .timeline .col .description p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .timeline .col .description {
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-top: -20px;
   }
 }
 
