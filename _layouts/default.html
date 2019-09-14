@@ -12,16 +12,17 @@
   </header>
 
   <body>
-
+    <!-- video autoplay muted loop id="myVideo">
+      <source src="{{ '/assets/files/background_animation.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video -->
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <div class="row">
-        <div class="column" style="margin-top: 20px">
-          <h4>{{ page.title }}</h4>
-          <div class="sserif-normal">
-            {{ content }}
-          </div>
+        <h4 style="margin-left: 10px; margin-top: 100px">{{ page.title }}</h4>
+        <div class="sserif-normal">
+          {{ content }}
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 ---
 date: 9 September, 2018
 title: Research Assistant at Serre Lab, Brown University
+logo: brown_carney_logo.png
 ---
 
 Joined as a Research Assistant at [Serre Lab](http://serre-lab.clps.brown.edu/) in

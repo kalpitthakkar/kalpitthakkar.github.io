@@ -3,16 +3,19 @@ layout: default
 ---
 
 {% assign sorted = site.news | sort: 'date' | reverse %}
-<div class="timeline">
+<div class="cards-horizontal">
   {% for item in sorted %}
-  <div class="col">
-    <div class="title">
-      <h1> {{ item.date | date_to_long_string }} </h1>
-      <!-- <h2> {{ item.title }} </h2> -->
+    <div class="summary-card">
+      <div class="cucumber">
+        {% assign year = item.date | date: '%Y' %}
+        <div class="head"> {{ year }} </div>
+        <h4> {{ item.date | date: '%B %d' }} </h4>
+        <p> {{ item.content | markdownify }} </p>
+        <div class="foot">
+          {% assign url = '/assets/images/' | append: item.logo %}
+          <img class="card-logo" src="{{ url }}"></img>
+        </div>
+      </div>
     </div>
-    <div class="description">
-      <p> {{ item.content | markdownify }} </p>
-    </div>
-  </div>
   {% endfor %}
 </div>

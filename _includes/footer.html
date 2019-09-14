@@ -1,1 +1,13 @@
 <script src="{{ '/assets/js/clock.js' | relative_url }}"></script>
+<!-- script src="{{ '/assets/js/three.js' | relative_url }}"></script -->
+<script>
+var video = document.getElementById("myVideo");
+
+function myFunction() {
+    if (video.paused) {
+        video.play();;
+    } else {
+        video.pause();
+    }
+}
+</script>

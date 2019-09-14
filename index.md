@@ -1,4 +1,4 @@
 ---
-title: Top Stories
+title: Recent Updates
 layout: home
 ---

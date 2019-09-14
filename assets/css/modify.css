@@ -4,22 +4,162 @@ ul {
   list-style-type: none;
 }
 
-.nav-list li {
-  float: right;
+#menuToggle
+{
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: brown;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: brown;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 32px;
+  padding: 20px;
+  
+  background: rgba(245, 245, 220, 0.3);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+}
+
+.menu-align {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 32px;
+}
+
+.menu-link {
+  color: black;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#menu a:hover {
+  color: brown;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.binary-clock {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .align-clocks {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0px;
 }
 
 .clock {
-  margin: 2px;
-  padding-left: 25px;
-}
-
-.clock li {
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .part {
@@ -40,13 +180,13 @@ ul {
   width: 5px;
   height: 5px;
   margin: 1px;
-  background-color: black;
+  background-color: brown;
 }
 
 .real-digit {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin: 0px 1px;
   font-size: 13px;
 }
@@ -56,20 +196,11 @@ ul {
 }
 
 .clock-digit .on {
-  background-color: orangered;
-}
-
-.nav-list-link a {
-  display: block;
-  color: black;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.nav-list-link a:hover {
-  color: orangered;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 1px;
+  background-color: bisque;
 }
 
 p {
@@ -81,7 +212,7 @@ a {
 }
 
 a:hover {
-  color: orangered;
+  color: brown;
 }
 
 .profile {
@@ -91,22 +222,32 @@ a:hover {
   border-radius: 50%;
 }
 
+.mylogo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+}
+
 .site-logo {
   display: inline-block;
   width: 48px;
   height: 48px;
-  padding-right: 20px;
 }
 
 .center {
-  display: flex;
-  justify-content: space-between;
   margin-top: 10px;
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
 }
 
 .orange-title {
   display: inline-block;
-  color: orangered; /*rgba(255, 69, 0, 0.85);*/
+  color: brown; /*rgba(255, 69, 0, 0.85);*/
   /*background-color: black;
   width: auto;
   height: auto;
@@ -114,76 +255,8 @@ a:hover {
 }
 
 @media (max-width: 550px) {
-  .clock {
-    margin: 2px;
-    padding-left: 5px;
-  }
-
-  .clock-digit {
-    margin: 0px 1px;
-  }
-
-  .clock-digit li {
-    width: 4px;
-    height: 4px;
-  }
-
-  .real-digit {
-    font-size: 8px;
-  }
-
-  .site-logo {
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
-  }
-
-  .nav-list-link a {
-    padding: 4px 6px;
-    font-size: 1rem;
-  }
-
-  .center {
-    margin-top: 5px;
-  }
-
   body {
     font-size: 1.2em;
-  }
-}
-
-@media (max-width: 750px) and (min-width: 550px) {
-  .clock {
-    margin: 2px;
-    padding-left: 5px;
-  }
-
-  .clock-digit {
-    margin: 0px 2px;
-  }
-
-  .clock-digit li {
-    width: 5px;
-    height: 5px;
-  }
-
-  .real-digit {
-    font-size: 13px;
-  }
-
-  .site-logo {
-    width: 32px;
-    height: 32px;
-    padding-right: 5px;
-  }
-
-  .nav-list-link a {
-    padding: 5px 8px;
-    font-size: 1.2rem;
-  }
-
-  .center {
-    margin-top: 8px;
   }
 }
 
@@ -328,8 +401,9 @@ a:hover {
 
 .img-arrange {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .img-archive {
@@ -343,7 +417,7 @@ figure.snip1104 {
   overflow: hidden;
   margin: 0.5rem;
   width: 98%;
-  background: orangered;
+  background: brown;
   color: #ffffff;
   text-align: center;
 }
@@ -375,7 +449,7 @@ figure.snip1104 p {
   right: 20px;
   display: inline-block;
   background: black;
-  color: orangered;
+  color: brown;
   -webkit-transform: rotate(-10deg) translate(0, -50%);
   transform: rotate(-10deg) translate(0, -50%);
   padding: 5px;
@@ -460,4 +534,82 @@ figure.snip1104:hover:before,
 figure.snip1104.hover:before {
   -webkit-transform: rotate(100deg) translateY(-150%);
   transform: rotate(100deg) translateY(-150%);
+}
+
+/* Change to a fancier template */
+.cards-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.summary-card .dust {
+  background: linear-gradient(90deg, #fcff9e 0%,  #c67700 100%);
+  color: brown;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 10px;
+  width: 300px;
+  height: 360px;
+}
+
+.summary-card .cucumber {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: brown;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 10px;
+  width: 300px;
+  height: 360px;
+}
+
+.summary-card .dust .foot {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.summary-card .dust .head {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.75em;
+}
+
+.summary-card .cucumber .foot {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.summary-card .cucumber .head {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.75em;
+}
+
+.card-logo {
+  filter: opacity(1) grayscale(100%);
+  width: auto;
+  height: 48px;
+  border: 2px #c67700;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+  background-size: cover;
+  transition: 1s opacity;
 }

@@ -1,69 +1,55 @@
 <div class="container">
-	<div class="center">
+	<div class="center-nav">
+		<a href="{{ '/' | relative_url }}">
+			<img class="site-logo" src="{{ '/assets/images/favicon.png' | relative_url }}"> </img>	
+		</a>
 
-		<div class="center">
-			<a href="{{ '/' | relative_url }}">
-				<img class="site-logo" src="{{ '/assets/images/favicon.png' | relative_url }}"> </img>	
-			</a>
-
-			<ul class="nav-list">
-				{% for obj in site.data.navigation %}
-				<li class="nav-list-link">
-					<a href="{{ obj.url | relative_url }}">
-					{{ obj.title }}
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-
-		<div class="align-clocks">
-			<ul class="clock">
-				<li class="part">
-					<ul class="clock-digit">
-						<li class="h11"> </li>
-						<li class="h12"> </li>
-						<li class="h13"> </li>
-						<li class="h14"> </li>
-					</ul>
-					<ul class="clock-digit">
-						<li class="h21"> </li>
-						<li class="h22"> </li>
-						<li class="h23"> </li>
-						<li class="h24"> </li>
-					</ul>
-				</li>
-				<li class="part">
-					<ul class="clock-digit">
-						<li class="m11"> </li>
-						<li class="m12"> </li>
-						<li class="m13"> </li>
-						<li class="m14"> </li>
-					</ul>
-					<ul class="clock-digit">
-						<li class="m21"> </li>
-						<li class="m22"> </li>
-						<li class="m23"> </li>
-						<li class="m24"> </li>
-					</ul>
-				</li>
-				<li class="part">
-					<ul class="clock-digit">
-						<li class="s11"> </li>
-						<li class="s12"> </li>
-						<li class="s13"> </li>
-						<li class="s14"> </li>
-					</ul>
-					<ul class="clock-digit">
-						<li class="s21"> </li>
-						<li class="s22"> </li>
-						<li class="s23"> </li>
-						<li class="s24"> </li>
-					</ul>
-				</li>
-			</ul>
+		<ul class="clock">
+			<li class="part">
+				<ul class="clock-digit">
+					<li class="h11"> </li>
+					<li class="h12"> </li>
+					<li class="h13"> </li>
+					<li class="h14"> </li>
+				</ul>
+				<ul class="clock-digit">
+					<li class="h21"> </li>
+					<li class="h22"> </li>
+					<li class="h23"> </li>
+					<li class="h24"> </li>
+				</ul>
+			</li>
+			<li class="part">
+				<ul class="clock-digit">
+					<li class="m11"> </li>
+					<li class="m12"> </li>
+					<li class="m13"> </li>
+					<li class="m14"> </li>
+				</ul>
+				<ul class="clock-digit">
+					<li class="m21"> </li>
+					<li class="m22"> </li>
+					<li class="m23"> </li>
+					<li class="m24"> </li>
+				</ul>
+			</li>
+			<li class="part">
+				<ul class="clock-digit">
+					<li class="s11"> </li>
+					<li class="s12"> </li>
+					<li class="s13"> </li>
+					<li class="s14"> </li>
+				</ul>
+				<ul class="clock-digit">
+					<li class="s21"> </li>
+					<li class="s22"> </li>
+					<li class="s23"> </li>
+					<li class="s24"> </li>
+				</ul>
+			</li>
+		</ul>
 	
-			<ul class="clock">
+			<!-- ul class="clock">
 				<li class="part">
 					<ul class="real-digit">
 						<li class="h1 robo-normal"> 0 </li>
@@ -90,8 +76,17 @@
 						<li class="s2 robo-normal"> 0 </li>
 					</ul>
 				</li>
-			</ul>
-		</div>
-
+			</ul -->
 	</div>
+	<nav role="navigation">
+		<ul id="menu">
+			<div class="menu-align">
+				{% for obj in site.data.navigation %}
+				<a class="menu-link" href="{{ obj.url | relative_url }}">
+					{{ obj.title }}
+				</a>
+				{% endfor %}
+			</div>
+		</ul>
+	</nav>
 </div>
