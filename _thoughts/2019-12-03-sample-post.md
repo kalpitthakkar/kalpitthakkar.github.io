@@ -3,6 +3,7 @@ layout: post-cols
 title: "Sample Post"
 date: 2019-12-03 10:00:00
 categories: [dummy]
+excerpt: "This is an example post with the cliche Lipsum gen paragraph."
 comments: true
 tufte: true
 ---

@@ -15,6 +15,16 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <blockquote class="resume">
+                "Just making sure that upon meeting with me, none start with: <em>'Hey, what's up?'</em>"
+            </blockquote>
+        </div>
+
+        {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+        <div class="row">
+            {% include social-links.html %}
+        </div>
         {{ content }}
     </div>
     {% include js.html %}
