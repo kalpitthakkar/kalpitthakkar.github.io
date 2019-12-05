@@ -744,7 +744,7 @@ pre code span { word-break: break-all; }
 
 @media only screen and (min-width: 992px) { .cover-card { text-align: right; margin: 0 auto; padding: 0 0px 80px; } }
 
-.social-links { margin-top: 0.5em; }
+.social-links { text-align: center; margin-top: 1em; font-size: 2em; }
 
 .social-links ul { margin: 0; padding: 0; }
 
