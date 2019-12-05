@@ -1,34 +1,22 @@
----
----
-
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en'}}">
-  <head>
-    {% include header.html %}
-  </head>
-  
-  <header>
-    {% include masthead.html %}
-  </header>
+<html lang="en">
 
-  <body>
-    <!-- video autoplay muted loop id="myVideo">
-      <source src="{{ '/assets/files/background_animation.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video -->
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% include head.html %}
+
+<body>
     <div class="container">
-      <div class="row">
-        <h4 style="margin-left: 10px; margin-top: 100px">{{ page.title }}</h4>
-        <div class="sserif-normal">
-          {{ content }}
+        <div class="row">
+            <div class="nav-list-masthead">
+                <div class="logo-img">
+                        <a href="/"><img src="/img/logo.png"></img></a>
+                </div>
+                <div class="bin-clock">
+                    {% include clock.html %}
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {% include footer.html %}
+        {{ content }}
+  </div>
+  {% include js.html %}
+</body>
 </html>

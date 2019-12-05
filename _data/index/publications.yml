@@ -1,0 +1,52 @@
+- name: "Disentangling Neural Mechanisms for Perceptual Grouping"
+  abs: "Forming perceptual groups and individuating objects in visual scenes is an essential step towards visual intelligence. This ability is thought to arise in the brain from computations implemented by bottom-up, horizontal, and top-down connections between neurons. However, the relative contributions of these connections to perceptual grouping are poorly understood. We address this question by systematically evaluating neural network architectures featuring combinations of these connections on two synthetic visual tasks, which stress low-level \"Gestalt\" vs. high-level object cues for perceptual grouping. We show that increasing the difficulty of either task strains learning for networks that rely solely on bottom-up processing. Horizontal connections resolve this limitation on tasks with Gestalt cues by supporting incremental spatial propagation of activities, whereas top-down connections rescue learning on tasks with high-level object cues by modifying coarse predictions about the position of the target object. Our findings dissociate the computational roles of bottom-up, horizontal and top-down connectivity, and demonstrate how a model featuring all of these interactions can more flexibly learn to form perceptual groups."
+  authors:
+    - name: Kim, Junkyung
+      profile: https://scholar.google.com/citations?user=xGxu6DoAAAAJ&hl=en
+    - name: Linsley, Drew
+      profile: https://scholar.google.com/citations?user=cXZlAuQAAAAJ&hl=en
+    - name: Thakkar, Kalpit
+      profile: https://scholar.google.com/citations?user=CPu8hk4AAAAJ&hl=en
+    - name: Serre, Thomas
+      profile: https://scholar.google.co.in/citations?user=kZlPW4wAAAAJ&hl=en
+  pub_link: https://arxiv.org/abs/1906.01558
+  conf:
+    - link: https://iclr.cc/
+      name: ICLR
+      year: 2020
+      status: submitted
+  code: https://bit.ly/2wdQYGd
+
+- name: "Part-based Graph Convolutional Network for Action Recognition"
+  abs: "Human actions comprise of joint motion of articulated body parts or 'gestures'. Human skeleton is intuitively represented as a sparse graph with joints as nodes and natural connections between them as edges. Graph convolutional networks have been used to recognize actions from skeletal videos. We introduce a part-based graph convolutional network (PB-GCN) for this task, inspired by Deformable Part-based Models (DPMs). We divide the skeleton graph into four subgraphs with joints shared across them and learn a recognition model using a part-based graph convolutional network. We show that such a model improves performance of recognition, compared to a model using entire skeleton graph. Instead of using 3D joint coordinates as node features, we show that using relative coordinates and temporal displacements boosts performance. Our model achieves state-of-the-art performance on two challenging benchmark datasets NTURGB+D and HDM05, for skeletal action recognition."
+  authors:
+    - name: Thakkar, Kalpit
+      profile: https://scholar.google.com/citations?user=CPu8hk4AAAAJ&hl=en
+    - name: Narayanan, P J
+      profile: https://scholar.google.com/citations?user=3HKjt_IAAAAJ&hl=en
+  pub_link: https://arxiv.org/abs/1809.04983
+  conf:
+    - link: http://bmvc2018.org/
+      name: BMVC
+      year: 2018
+      status: accepted
+  github: https://github.com/kalpitthakkar/pb-gcn/
+
+- name: "Nose, Eyes and Ears: Head Pose Estimation by Locating Facial Keypoints"
+  abs: "Monocular head pose estimation requires learning a model that computes the intrinsic Euler angles for pose (yaw, pitch, roll) from an input image of human face. Annotating ground truth head pose angles for images in the wild is difficult and requires ad-hoc fitting procedures (which provides only coarse and approximate annotations). This highlights the need for approaches which can train on data captured in controlled environment and generalize on the images in the wild (with varying appearance and illumination of the face). Most present day deep learning approaches which learn a regression function directly on the input images fail to do so. To this end, we propose to use a higher level representation to regress the head pose while using deep learning architectures. More specifically, we use the uncertainty maps in the form of 2D soft localization heatmap images over five facial keypoints, namely left ear, right ear, left eye, right eye and nose, and pass them through an convolutional neural network to regress the head-pose. We show head pose estimation results on two challenging benchmarks BIWI and AFLW and our approach surpasses the state of the art on both the datasets."
+  authors:
+    - name: Gupta, Aryaman
+      profile: https://www.linkedin.com/in/aryaman-gupta-183975b8/
+    - name: Thakkar, Kalpit
+      profile: https://scholar.google.com/citations?user=CPu8hk4AAAAJ&hl=en
+    - name: Gandhi, Vineet
+      profile: https://scholar.google.co.in/citations?user=PVlBz8oAAAAJ&hl=en
+    - name: Narayanan, P J
+      profile: https://scholar.google.com/citations?user=3HKjt_IAAAAJ&hl=en
+  pub_link: https://arxiv.org/abs/1812.00739
+  conf:
+    - link: https://2019.ieeeicassp.org/
+      name: ICASSP
+      year: 2019
+      status: accepted
+  github: https://github.com/persistentBuilder/keypointsHeadpose

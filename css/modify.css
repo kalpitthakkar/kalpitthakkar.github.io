@@ -1,0 +1,72 @@
+/* Override the css elements in Skeleton CSS as you need */
+
+.binary-clock {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.align-clocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 1px;
+  padding: 0px 2px;
+}
+
+.clock-digit {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 2px;
+}
+
+.clock-digit li {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 1px;
+  background-color: rgba(169,169,169,1);
+}
+
+.real-digit {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 1px;
+}
+
+.real-digit li {
+  display: inline-block;
+  margin: 0;
+}
+
+.real-digit > .colon {
+  transition: all .1s;
+}
+
+.clock-digit .on {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 1px;
+  background-color: black;
+}

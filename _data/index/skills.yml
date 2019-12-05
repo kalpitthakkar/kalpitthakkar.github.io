@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: DL Frameworks, GitHub, Python, Communication, OpenCV, CUDA
+percentage: 85, 100, 95, 90, 80, 70

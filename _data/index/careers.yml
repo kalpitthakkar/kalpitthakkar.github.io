@@ -1,0 +1,11 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Leapmind
+  link: https://leapmind.io/
+  date: Dec 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Machine Learning Engineer
+
+- name: Brown University
+  link: https://brown.edu/
+  date: Sep 2018 - Sep 2019
+  job: Research Assistant

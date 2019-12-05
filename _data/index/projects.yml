@@ -1,0 +1,24 @@
+- name: Action Recognition & Pose Estimation from Patient Monitoring Videos
+  loc: Research Project @ Brown University
+  descr: "Recognize motions from a predefined set of motions (such as reach, grasp & move, withdraw reach, etc) using a inflated-inception 3D deep learning architecture run on Google TPUs. To improve the performance, we also estimate pose from these videos to add information for recognizing motions, using a framework called DeepLabCut."
+  github: https://github.com/kalpitthakkar/mgh-video/tree/master/action_recog
+
+- name: Rapid Vision Experiments to Understand Human Perception for Objectness
+  loc: Research Project @ Brown University
+  descr: "Developed web-based experiments (jsPsych + Amazon Mechanical Turk) for humans, which requires human to respond to binary categorization tasks that are expected to demand contour tracking and segmentation. The response times were constrained in order to disentangle the role of bottom-up, horizontal and feedback connections in segmenting objects, hypothesizing that it correlates with our biologically-inspired recurrent model."
+  github: https://github.com/kalpitthakkar/psychophysics-experiments
+
+- name: Deep Learning and Kinect-based Analysis of Behavior Recordings
+  loc: Research Project @ Brown University
+  descr: "Using computer vision techniques, we automate the analysis of behavioral data collected from a series of tasks (trials) performed by children in a specially set up playroom. The analysis involved calculating useful metrics based on Kinect trajectory data and saliency measures (bottom-up & top-down) from region proposals used by deep object detectors (Faster RCNN)."
+  github: https://github.com/kalpitthakkar/smart-playroom-central
+
+- name: "Streaming sort: Hybrid string sort using CPU+GPU"
+  loc: Research Project @ IIIT Hyderabad
+  descr: "A radix-sort based implementation for sorting strings using GPU. All the data-processing-intensive heavylifting is done by the CPU to make sorting of large strings possible. Strings are removed progressively as they attain their final position to reduce the problem size with time."
+  paper: /files/HiPC-SRS9_paper_37.pdf
+
+- name: Compiler for a subset of C language
+  loc: Course Project @ IIIT Hyderabad
+  descr: "Using structured grammar for subset of C language, created a parser in Bison+Flex and constructed an AST from it (written in C++). The AST is designed using Visitor Design pattern and traversal results in LLVM bitcode for the input program."
+  github: https://github.com/kalpitthakkar/Compiler
