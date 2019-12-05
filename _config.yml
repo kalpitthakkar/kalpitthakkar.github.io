@@ -6,7 +6,7 @@
 title: Home @ Kalpit Thakkar
 email: kthakkar1605@gmail.com
 description: "Kalpit Thakkar"
-url: https://kalpitthakkar.github.io/roadNotTaken
+url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 enable_utterances: true
 
