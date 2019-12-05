@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: post-cols
 title: "Sample Post"
 date: 2019-12-03 10:00:00
 categories: [dummy]
 comments: true
+tufte: true
 ---
 
-This blog needs to have the two-column setting with an option to go Tufte-style.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer{% sidenote 'One' 'What? It works! I am just trying to make it multiline now so that I can see if this is working properly.' %} took a galley of type and scrambled it to make a type specimen book<sup><strong>3</strong></sup>. It has survived not only five centuries, but also the leap into electronic typesetting<sup><strong>4</strong></sup>, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
