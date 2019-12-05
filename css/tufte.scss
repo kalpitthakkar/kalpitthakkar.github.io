@@ -274,7 +274,7 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
                                            vertical-align: baseline; }
 
 .sidenote-number:after { content: counter(sidenote-counter);
-                         font-size: 1rem;
+                         font-size: 0.9rem;
                          top: -0.5rem;
                          left: 0.1rem; }
 
@@ -796,7 +796,8 @@ hr.slender {
 // Post title
 .post-title {
     font-family: $font-family-base;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .post-title-link {
@@ -845,8 +846,8 @@ a.read-more {
 // Post content
 
 .post-content {
-  font-family: $font-family-base;
-  font-size: 1.2em;
+  font-family: $font-family-serif-2;
+  font-size: 1.1em;
 }
 
 #post {
@@ -991,22 +992,22 @@ a.read-more {
   font-size: 0.875em;
   font-family: $font-family-base;
   font-weight: 700;
-  background-color: $primary;
-  color: $white;
+  //background-color: $primary;
+  //color: $white;
   border-width: 2px !important;
   border-style: solid !important;
-  border-color: $primary;
+  //border-color: $primary;
   text-decoration: none !important;
   border-radius: 5px;
-  &:visited {
-    color: $white;
-    border-color: $primary;
-  }
-  &:hover {
-    background-color: $white;
-    color: $primary;
-    border-color: $primary;
-  }
+  //&:visited {
+  //  color: $white;
+  //  border-color: $primary;
+  //}
+  //&:hover {
+  //  background-color: $white;
+  //  color: $primary;
+  //  border-color: $primary;
+  //}
 }
 
 // Success button
