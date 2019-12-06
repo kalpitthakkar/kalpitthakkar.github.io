@@ -191,7 +191,7 @@ html { text-align: baseline; font-size: 8px; -webkit-font-smoothing: antialiased
 
 p > a { color: #a00000; text-decoration: none; }
 
-body { width: 100%; margin-left: 1em; margin-right: 1em; font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: #fffff8; color: #111; counter-reset: sidenote-counter; }
+body { width: 100%; font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: #fffff8; color: #111; counter-reset: sidenote-counter; }
 
 h1 { font-weight: 400; margin-top: 1.568rem; margin-bottom: 1.568rem; font-size: 2.5rem; line-height: 0.784; }
 
@@ -201,9 +201,12 @@ h3 { font-style: italic; font-weight: 400; font-size: 1.8rem; margin-top: 2.1777
 
 p .subtitle { font-style: italic; margin-top: 2.1777777777777778rem; margin-bottom: 2.1777777777777778rem; font-size: 1.8rem; display: block; line-height: 1.08888888888889; }
 
-p { line-height: 2rem; margin-top: 0.3rem; padding-right: 2rem; vertical-align: baseline; }
+p { font-size: 1.4rem; }
 
-/*p, li { line-height: 2rem; margin-top: 1.4rem; padding-right: 2rem; //removed because,  why? vertical-align: baseline; }*/
+ul { font-size: 1.25rem; }
+
+p, li { line-height: 2rem; margin-top: 1rem; vertical-align: baseline; }
+
 blockquote p { font-size: 1.1rem; line-height: 1.78181818; margin-top: 1.78181818rem; margin-bottom: 1.78181818rem; width: 45%; padding-left: 2.5%; padding-right: 2.5%; }
 
 blockquote footer { width: 45%; text-align: right; }
@@ -242,11 +245,12 @@ th, td { font-size: 1.2rem; line-height: 1.71428571; }
 
 /* -- End of Table Styling section --*/
 /* Basic Layout stuff --*/
-article { position: relative; padding: 1rem 0rem 2.5rem 0rem; padding-left: 13.5%; }
+article { position: relative; padding: 1rem 0rem 2.5rem 0rem; }
 
 section { padding-top: 1rem; padding-bottom: 1rem; }
 
-/*ul,ol { width: 45%; -webkit-padding-start: 5%; -webkit-padding-end: 5%; list-style-type: none; }*/
+ul { width: 45%; -webkit-padding-start: 5%; -webkit-padding-end: 5%; list-style-type: none; }
+
 figure, figure img.maincolumn { max-width: 55%; -webkit-margin-start: 0; -webkit-margin-end: 0; margin-bottom: 3em; }
 
 figcaption { float: right; clear: right; margin-right: -48%; margin-top: 0; margin-bottom: 0; font-size: 1.0rem; line-height: 1.6; vertical-align: baseline; position: relative; max-width: 40%; }
@@ -257,7 +261,7 @@ img { max-width: 100%; }
 
 .sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 0.8rem; line-height: 1.5; vertical-align: baseline; position: relative; }
 
-li .sidenote, li .marginnote { margin-right: -80%; }
+li .sidenote, li .marginnote { margin-right: -90%; }
 
 blockquote .sidenote, blockquote .marginnote { margin-right: -79%; }
 
@@ -406,7 +410,7 @@ hr.slender { border: 0; height: 1px; margin-top: 1.4rem; margin-bottom: 1.4rem; 
 
 /*-- End of Icomoon icon font section --*/
 /** Grid */
-.container { margin: 0 auto; max-width: 1280px; width: 90%; }
+.container { margin: 0 auto; width: 100%; }
 
 .banner { position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -20%); text-align: center; }
 
@@ -528,7 +532,7 @@ hr.slender { border: 0; height: 1px; margin-top: 1.4rem; margin-bottom: 1.4rem; 
   .row .col.offset-l11 { margin-left: 91.6666666667%; }
   .row .col.offset-l12 { margin-left: 100%; } }
 
-.nav-list-masthead { margin-top: 2.3em; margin-bottom: 2em; padding: 0 0.5em; list-style: none; }
+.nav-list-masthead { margin: 1.9em 0; padding: 0 1em; list-style: none; }
 
 .nav-list-masthead .logo-img { display: block; width: 72px; height: 72px; float: left; }
 
@@ -536,7 +540,7 @@ hr.slender { border: 0; height: 1px; margin-top: 1.4rem; margin-bottom: 1.4rem; 
 
 .nav-list-masthead .logo-img img:hover, .nav-list-masthead .logo-img img:focus { filter: opacity(100%); }
 
-.nav-list-masthead .bin-clock { display: block; float: right; font-size: 12px; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.nav-list-masthead .bin-clock { display: block; float: right; font-size: 13px; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .image-credit { float: right; font-weight: bold; font-style: italic; color: #09ABF6; font-size: 13px; padding-right: 20px; }
 
@@ -580,13 +584,13 @@ a.read-more { padding: 5px 8px; }
 
 .share-buttons { padding-top: 1em; border-top: 1px solid #ddd; }
 
-.share-buttons ul { margin: 0; padding: 0; list-style: none; }
+.share-buttons ol { margin: 0; padding: 0; list-style: none; }
 
-.share-buttons ul li { display: inline-block; margin-right: 0.5em; }
+.share-buttons ol li { display: inline-block; margin-right: 0.5em; }
 
-.share-buttons ul li span { display: none; }
+.share-buttons ol li span { display: none; }
 
-@media only screen and (min-width: 600px) { .share-buttons ul li span { display: inline; margin: 0.5em; } }
+@media only screen and (min-width: 600px) { .share-buttons ol li span { display: inline; margin: 0.5em; } }
 
 .twitter { background-color: #77bcf1; color: #fff; border-color: #77bcf1; }
 
@@ -619,7 +623,7 @@ a.read-more { padding: 5px 8px; }
 .reddit:hover { background-color: #fff; color: #5f99cf; border-color: #5f99cf; }
 
 /* Buttons ========================================================================== */
-.btn { display: inline-block; margin-bottom: 20px; padding: 8px 20px; font-size: 0.875em; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; border-width: 2px !important; border-style: solid !important; text-decoration: none !important; border-radius: 5px; }
+.btn { display: inline-block; margin-bottom: 20px; padding: 4px 20px; font-size: 0.875em; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; border-width: 2px !important; border-style: solid !important; text-decoration: none !important; border-radius: 5px; }
 
 .btn-success { background-color: #65e892; color: #fff; border-color: #65e892; }
 
