@@ -88,8 +88,6 @@ p > a { @if $link-style == underline
   }
 
 body { width: 100%;
-       margin-left: 1em;
-       margin-right: 1em;
        font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
        background-color: $bg-color;
        color: $text-color;
@@ -128,17 +126,13 @@ p .subtitle { font-style: italic;
              line-height: 1.08888888888889; }
 
 
-//p, ol, ul { font-size: 1.4rem; }
+p { font-size: 1.4rem; }
 
-p { line-height: 2rem;
-    margin-top: 0.3rem;
-    padding-right: 2rem; //removed because,  why?
-    vertical-align: baseline; }
+ul { font-size: 1.25rem; }
 
-/*p, li { line-height: 2rem;
-        margin-top: 1.4rem;
-        padding-right: 2rem; //removed because,  why?
-        vertical-align: baseline; }*/
+p, li { line-height: 2rem;
+        margin-top: 1rem;
+        vertical-align: baseline; }
 
 blockquote p {  font-size: 1.1rem;
                 line-height: 1.78181818;
@@ -216,17 +210,16 @@ th, td{ font-size: 1.2rem;
 
 article { position: relative;
           padding: 1rem 0rem 2.5rem 0rem; 
-          padding-left: 13.5%;
         } // reduced top and bottom padding by 50% */
 
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
 
-/*ul,ol { width: 45%;
+ul { width: 45%;
      -webkit-padding-start: 5%;
      -webkit-padding-end: 5%;
-     list-style-type: none; }*/
+     list-style-type: none; }
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
@@ -261,7 +254,7 @@ img { max-width: 100%; }
                          vertical-align: baseline;
                          position: relative; }
 
-li .sidenote, li .marginnote{ margin-right: -80%; } //added to allow for the fact that lists are indented and marginnotes and sidenotes push to right
+li .sidenote, li .marginnote{ margin-right: -90%; } //added to allow for the fact that lists are indented and marginnotes and sidenotes push to right
 
 blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
 
@@ -616,8 +609,7 @@ hr.slender {
 // Container
 .container {
   margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  width: 100%;
 }
 
 .banner {
@@ -759,9 +751,8 @@ hr.slender {
 }
 
 .nav-list-masthead {
-  margin-top: 2.3em;
-  margin-bottom: 2em;
-  padding: 0 0.5em;
+  margin: 1.9em 0;
+  padding: 0 1em;
   list-style: none;
   .logo-img {
     display: block;
@@ -780,8 +771,8 @@ hr.slender {
   .bin-clock {
     display: block;
     float: right;
-    font-size: 12px;
-    font-family: $font-family-sans-serif
+    font-size: 13px;
+    font-family: $font-family-sans-serif;
    }
 }
 .image-credit {
@@ -893,7 +884,7 @@ a.read-more {
 .share-buttons {
   padding-top: 1em;
   border-top: 1px solid #ddd;
-  ul {
+  ol {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -988,7 +979,7 @@ a.read-more {
 .btn {
   display: inline-block;
   margin-bottom: 20px;
-  padding: 8px 20px;
+  padding: 4px 20px;
   font-size: 0.875em;
   font-family: $font-family-base;
   font-weight: 700;

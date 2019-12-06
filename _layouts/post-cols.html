@@ -5,33 +5,33 @@
 
 <body>
 <div class="container">
-<div class="row">
-    <div class="nav-list-masthead">
-        <div class="logo-img">
+    <div class="row">
+        <div class="nav-list-masthead">
+            <div class="logo-img">
                 <a href="/"><img src="/img/logo.png"></img></a>
-        </div>
-        <div class="bin-clock">
-            {% include clock.html %}
+            </div>
+            <div class="bin-clock">
+                {% include clock.html %}
+            </div>
         </div>
     </div>
-</div>
-</div>
+    <div class="row">
+        {% if page.image.feature %}
+        <div class="post-image-feature">
+          <img class="feature-image" src=
+          {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
+          "{{ page.image.feature }}"
+          {% else %}
+          "{{ site.url }}/img/{{ page.image.feature }}"
+          {% endif %}
+          alt="{{ page.title | escape }} feature image">
 
-    {% if page.image.feature %}
-    <div class="post-image-feature">
-      <img class="feature-image" src=
-      {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
-      {% else %}
-      "{{ site.url }}/img/{{ page.image.feature }}"
-      {% endif %}
-      alt="{{ page.title | escape }} feature image">
-
-      {% if page.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-      {% endif %}
-    </div><!-- /.image-wrap -->
-    {% endif %}
+          {% if page.image.credit %}
+          <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+          {% endif %}
+        </div><!-- /.image-wrap -->
+        {% endif %}
+    </div>
 
     <article class="group">
       <div id="post">
@@ -51,11 +51,9 @@
       </div>
     </article>
 
-
-    <div class="container">
     <div class="share-buttons">
-      <h4 style="margin-bottom: 5px;">SHARE ON: </h4>
-      <ul>
+      <h4>SHARE ON: </h4>
+      <ol>
         <li>
         <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
         </li>
@@ -71,15 +69,15 @@
         <li>
         <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
         </li>
-      </ul>
-    </div><!-- end share-buttons -->
+      </ol>
+    </div><!-- end share buttons -->
 
     {% if site.enable_utterances and page.comments == true %}
     <div class="row">
       {% include utterances.html %}
     </div>
     {% endif %}
-    </div>
+</div>
 
 {% include js.html %}
 </body>

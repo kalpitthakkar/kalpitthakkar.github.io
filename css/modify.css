@@ -13,7 +13,7 @@
   margin-bottom: 2rem;
 }
 
-ul {
+ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ ul {
   margin: 0px 2px;
 }
 
-.clock-digit li {
+.digit {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -52,6 +52,7 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0px 1px;
+  font-size: 13px;
 }
 
 .real-digit li {
