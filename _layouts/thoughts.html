@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for post in site.thoughts %}
+{% unless post.draft %}
 <section class="post">
   <header class="post-header">
     <div class="post-meta resume">
@@ -55,4 +56,5 @@ layout: default
     {% endif %}
 
 </section>
+{% endunless %}
 {% endfor %}

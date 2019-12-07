@@ -56,7 +56,7 @@
 .social-links {
   text-align: center;
   margin-top: 1em;
-  font-size: 2em;
+  font-size: 20px;
   ul {
     margin: 0;
     padding: 0;
@@ -72,6 +72,9 @@
         }
       }
     }
+  }
+  @include media-query($medium-screen) {
+    font-size: 32px;
   }
 }
 .nav-list {

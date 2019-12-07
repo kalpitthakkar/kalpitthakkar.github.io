@@ -7,6 +7,7 @@ comments: true
 excerpt: "Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up."
 mathjax: true
 tufte: true
+draft: true
 ---
 Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up.
 

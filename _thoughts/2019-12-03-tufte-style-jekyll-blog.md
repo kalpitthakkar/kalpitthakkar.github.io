@@ -7,6 +7,7 @@ comments: true
 excerpt: "An example post having important styling elements from tufte style jekyll blog"
 mathjax: true
 tufte: true
+draft: true
 ---
 ## Introduction
 
