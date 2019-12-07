@@ -744,7 +744,7 @@ pre code span { word-break: break-all; }
 
 @media only screen and (min-width: 992px) { .cover-card { text-align: right; margin: 0 auto; padding: 0 0px 80px; } }
 
-.social-links { text-align: center; margin-top: 1em; font-size: 2em; }
+.social-links { text-align: center; margin-top: 1em; font-size: 20px; }
 
 .social-links ul { margin: 0; padding: 0; }
 
@@ -753,6 +753,8 @@ pre code span { word-break: break-all; }
 .social-links ul li a.social-link-item { color: #8d7edc; }
 
 .social-links ul li a.social-link-item:hover, .social-links ul li a.social-link-item:focus { color: #bfb6eb; }
+
+@media only screen and (min-width: 992px) { .social-links { font-size: 32px; } }
 
 .nav-list { margin: 0; padding: 0; list-style: none; }
 

@@ -259,11 +259,11 @@ figure.fullwidth figcaption { float: left; margin-right: 0%; margin-left: 36%; }
 
 img { max-width: 100%; }
 
-.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 0.8rem; line-height: 1.5; vertical-align: baseline; position: relative; }
+.sidenote, .marginnote { float: right; clear: right; margin-right: -70%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 0.8rem; line-height: 1.5; vertical-align: baseline; position: relative; }
 
 li .sidenote, li .marginnote { margin-right: -90%; }
 
-blockquote .sidenote, blockquote .marginnote { margin-right: -79%; }
+blockquote .sidenote, blockquote .marginnote { margin-right: -89%; }
 
 .sidenote-number { counter-increment: sidenote-counter; }
 
