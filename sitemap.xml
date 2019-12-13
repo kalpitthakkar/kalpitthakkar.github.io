@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
     
     <url>
-      <loc>/lifestyle/2019/12/03/first-month-of-veganism/</loc>
+      <loc>https://kalpitthakkar.github.io/lifestyle/2019/12/03/first-month-of-veganism/</loc>
       
         <lastmod>2019-12-05</lastmod>
       
@@ -20,24 +20,9 @@
   
     
     <url>
-      <loc>/about/</loc>
+      <loc>https://kalpitthakkar.github.io/about/</loc>
       
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/feed.xml</loc>
-      
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -50,41 +35,9 @@
   
     
     <url>
-      <loc>/</loc>
+      <loc>https://kalpitthakkar.github.io/feed.xml</loc>
       
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/lifestyle/</loc>
-      
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>/news/</loc>
-      
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -97,9 +50,24 @@
   
     
     <url>
-      <loc>/curriculum-vitae/</loc>
+      <loc>https://kalpitthakkar.github.io/</loc>
       
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://kalpitthakkar.github.io/lifestyle/</loc>
+      
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -114,9 +82,41 @@
   
     
     <url>
-      <loc>/thoughts/</loc>
+      <loc>https://kalpitthakkar.github.io/news/</loc>
       
-        <lastmod>2019-12-13T16:17:43+05:30</lastmod>
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://kalpitthakkar.github.io/curriculum-vitae/</loc>
+      
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://kalpitthakkar.github.io/thoughts/</loc>
+      
+        <lastmod>2019-12-13T16:33:28+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
