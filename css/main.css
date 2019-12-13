@@ -31,7 +31,7 @@
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /** Remove default margin. */
-html, body { margin: 0; height: 100%; }
+html, body { margin: 0; height: 80%; }
 
 /* HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
@@ -376,7 +376,7 @@ footer .heart-icon { color: #f83e4b; text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b
 .warning-bg-color { background-color: #F5A623; }
 
 /** Grid */
-.container { margin: 0 auto; max-width: 1280px; width: 90%; height: 80%; }
+.container { margin: 0 auto; max-width: 1280px; width: 90%; height: 90%; }
 
 .banner { position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -20%); text-align: center; }
 
@@ -385,11 +385,11 @@ footer .heart-icon { color: #f83e4b; text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b
 .banner .nav-text { font-family: "Roboto Mono", "Courier New", monospace; font-weight: 600; font-size: 24px; }
 
 @media only screen and (min-width: 992px) { .container { width: 85%; }
-  .banner .title { padding-bottom: 20px; }
+  .banner .title { padding-bottom: 10px; }
   .banner .nav-text { font-size: 32px; } }
 
 @media only screen and (min-width: 1200px) { .container { width: 70%; }
-  .banner .title { padding-bottom: 25px; }
+  .banner .title { padding-bottom: 15px; }
   .banner .nav-text { font-size: 48px; } }
 
 .container .row { margin-left: -0.75rem; margin-right: -0.75rem; }

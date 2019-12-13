@@ -173,19 +173,9 @@
 
 html, body { height: 100%; }
 
-html { text-align: baseline; font-size: 8px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html { text-align: baseline; font-size: 10px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-@media only screen and (min-width: 800px) { html { font-size: 10px; } }
-
-@media only screen and (min-width: 900px) { html { font-size: 11px; } }
-
-@media only screen and (min-width: 1000px) { html { font-size: 12px; } }
-
-@media only screen and (min-width: 1100px) { html { font-size: 13px; } }
-
-@media only screen and (min-width: 1200px) { html { font-size: 14px; } }
-
-@media only screen and (min-width: 1300px) { html { font-size: 16px; } }
+@media only screen and (min-width: 1100px) { html { font-size: 15px; } }
 
 .mathblock { font-size: 1.3rem; }
 
@@ -245,7 +235,7 @@ th, td { font-size: 1.2rem; line-height: 1.71428571; }
 
 /* -- End of Table Styling section --*/
 /* Basic Layout stuff --*/
-article { position: relative; padding: 1rem 0rem 2.5rem 0rem; }
+article { position: relative; padding: 1rem 0rem 2.5rem 0rem; margin: 0 1.5rem; }
 
 section { padding-top: 1rem; padding-bottom: 1rem; }
 
@@ -564,9 +554,11 @@ hr.slender { border: 0; height: 1px; margin-top: 1.4rem; margin-bottom: 1.4rem; 
 
 a.read-more { padding: 5px 8px; }
 
-.post-content { font-family: "Lora", "Times New Roman", Times, serif; font-size: 1.1em; }
+.post-content { font-family: "Lora", "Times New Roman", Times, serif; }
 
-#post .post-header { margin-bottom: 30px; }
+.post-content p { font-size: 1.6rem; }
+
+#post .post-header { font-size: 18px; margin-bottom: 30px; }
 
 #post h1 { margin: 0.5em 0 1em; }
 
@@ -582,7 +574,7 @@ a.read-more { padding: 5px 8px; }
 
 .feature-image { width: 100%; height: auto; margin-bottom: 20px; padding: 20px; }
 
-.share-buttons { padding-top: 1em; border-top: 1px solid #ddd; }
+.share-buttons { margin: 0 1rem; padding-top: 1em; border-top: 1px solid #ddd; }
 
 .share-buttons ol { margin: 0; padding: 0; list-style: none; }
 
