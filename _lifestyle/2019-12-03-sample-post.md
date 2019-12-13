@@ -6,6 +6,9 @@ categories: [dummy, cat2]
 excerpt: "Cool __stuff__."
 comments: true
 draft: true
+published: false
+sitemap:
+  lastmod: 2019-12-03
 ---
 
 Looking good, mi amigo.

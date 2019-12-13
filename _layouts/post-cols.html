@@ -5,7 +5,7 @@
 
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row" style="margin: 0 1rem">
         <div class="nav-list-masthead">
             <div class="logo-img">
                 <a href="/"><img src="/img/logo.png"></img></a>
@@ -15,7 +15,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
+
+    <div class="row" style="margin: 0 1rem">
         {% if page.image.feature %}
         <div class="post-image-feature">
           <img class="feature-image" src=
@@ -73,7 +74,7 @@
     </div><!-- end share buttons -->
 
     {% if site.enable_utterances and page.comments == true %}
-    <div class="row">
+    <div class="row" style="margin: 0 1rem">
       {% include utterances.html %}
     </div>
     {% endif %}

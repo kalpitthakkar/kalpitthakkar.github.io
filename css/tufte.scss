@@ -2,6 +2,8 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 nav_exclude: true
+sitemap:
+  exclude: 'yes'
 ---
 /*****************************************************************************/
 /*
@@ -39,33 +41,13 @@ html, body { height: 100%; }
 
 html {
     text-align: baseline;
-    font-size: 8px;
+    font-size: 10px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-@include media-query(800px) {
-    html{ font-size: 10px;}
-}
-
-@include media-query(900px) {
-    html{ font-size: 11px;}
-}
-
-@include media-query(1000px) {
-    html{ font-size: 12px;}
-}
-
 @include media-query(1100px) {
-    html{ font-size: 13px;}
-}
-
-@include media-query(1200px) {
-    html{ font-size: 14px;}
-}
-
-@include media-query(1300px) {
-    html{ font-size: 16px;}
+    html{ font-size: 15px;}
 }
 
 // sets link style according to values in _settings.scss
@@ -209,7 +191,8 @@ th, td{ font-size: 1.2rem;
 /* Basic Layout stuff --*/
 
 article { position: relative;
-          padding: 1rem 0rem 2.5rem 0rem; 
+          padding: 1rem 0rem 2.5rem 0rem;
+          margin: 0 1.5rem;
         } // reduced top and bottom padding by 50% */
 
 section { padding-top: 1rem;
@@ -838,11 +821,14 @@ a.read-more {
 
 .post-content {
   font-family: $font-family-serif-2;
-  font-size: 1.1em;
+  p {
+    font-size: 1.6rem;
+  }
 }
 
 #post {
   .post-header {
+    font-size: 18px;
     margin-bottom: 30px;
   }
 }
@@ -882,6 +868,7 @@ a.read-more {
 
 // Shares Buttons
 .share-buttons {
+  margin: 0 1rem;
   padding-top: 1em;
   border-top: 1px solid #ddd;
   ol {

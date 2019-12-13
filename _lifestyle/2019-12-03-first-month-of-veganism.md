@@ -5,6 +5,10 @@ date: 2019-12-03 10:00:00
 categories: [vegan,lifestyle,india]
 excerpt: "I will talk about my struggle with exclusion of __ghee__ from my diet while staying at home in India and my attempts at cooking some easy to put together vegan meals. This first month of veganism has taught me many things and has helped me dispel some of my own misunderstandings about nutrition and dietary habits."
 comments: true
+published: true
+sitemap:
+  lastmod: 2019-12-05
+  priority: 0.8
 ---
 
 ## Prologue

@@ -8,6 +8,9 @@ excerpt: "An example post having important styling elements from tufte style jek
 mathjax: true
 tufte: true
 draft: true
+published: false
+sitemap:
+  lastmod: 2019-12-09
 ---
 ## Introduction
 
